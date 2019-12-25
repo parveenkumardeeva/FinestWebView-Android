@@ -513,6 +513,7 @@ public class FinestWebViewActivity extends AppCompatActivity
       urlTv.setMaxWidth(maxWidth);
       requestCenterLayout();
     }
+/*
 
     { // Icons
       updateIcon(close, rtl ? R.drawable.more : R.drawable.close);
@@ -520,6 +521,7 @@ public class FinestWebViewActivity extends AppCompatActivity
       updateIcon(forward, R.drawable.forward);
       updateIcon(more, rtl ? R.drawable.close : R.drawable.more);
     }
+*/
 
     { // Divider
       if (gradientDivider) {
