@@ -3,17 +3,18 @@ package com.thefinestartist.finestwebview;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.support.annotation.AnimRes;
-import android.support.annotation.ArrayRes;
-import android.support.annotation.ColorInt;
-import android.support.annotation.ColorRes;
-import android.support.annotation.DimenRes;
-import android.support.annotation.DrawableRes;
-import android.support.annotation.NonNull;
-import android.support.annotation.StringRes;
-import android.support.annotation.StyleRes;
-import android.support.design.widget.AppBarLayout.LayoutParams.ScrollFlags;
+import androidx.annotation.AnimRes;
+import androidx.annotation.ArrayRes;
+import androidx.annotation.ColorInt;
+import androidx.annotation.ColorRes;
+import androidx.annotation.DimenRes;
+import androidx.annotation.DrawableRes;
+import androidx.annotation.NonNull;
+import androidx.annotation.StringRes;
+import androidx.annotation.StyleRes;
 import android.webkit.WebSettings;
+
+import com.google.android.material.appbar.AppBarLayout;
 import com.thefinestartist.Base;
 import com.thefinestartist.finestwebview.enums.Position;
 import com.thefinestartist.finestwebview.listeners.BroadCastManager;
@@ -225,7 +226,7 @@ public class FinestWebView {
       return this;
     }
 
-    public Builder toolbarScrollFlags(@ScrollFlags int flags) {
+    public Builder toolbarScrollFlags(@AppBarLayout.LayoutParams.ScrollFlags int flags) {
       this.toolbarScrollFlags = flags;
       return this;
     }
